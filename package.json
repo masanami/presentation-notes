@@ -1,0 +1,33 @@
+{
+  "name": "presentation-notes",
+  "version": "1.0.0",
+  "description": "Marpを使用したプレゼンテーション資料管理",
+  "scripts": {
+    "build": "npm run build:all",
+    "build:all": "marp presentations/**/slides.md --html",
+    "build:sample": "marp presentations/sample-presentation/slides.md --html",
+    "watch": "marp presentations/**/slides.md --html --watch",
+    "watch:sample": "marp presentations/sample-presentation/slides.md --html --watch",
+    "pdf:all": "marp presentations/**/slides.md --pdf",
+    "pdf:sample": "marp presentations/sample-presentation/slides.md --pdf",
+    "pptx:all": "marp presentations/**/slides.md --pptx",
+    "pptx:sample": "marp presentations/sample-presentation/slides.md --pptx",
+    "server": "marp presentations/**/slides.md --html --server",
+    "clean": "find presentations -name '*.html' -o -name '*.pdf' -o -name '*.pptx' | xargs rm -f"
+  },
+  "keywords": [
+    "marp",
+    "presentation",
+    "markdown",
+    "slides"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
+  }
+}
