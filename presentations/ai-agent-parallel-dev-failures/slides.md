@@ -143,33 +143,9 @@ style: |
 
 # 開発フローのイメージ
 
-```mermaid
-flowchart LR
-    A[要件定義] --> B[基本設計]
-    B --> C[タスク分割]
-    C --> D[実装フェーズ]
-    
-    D --> E1[ワーカー1<br/>実装]
-    D --> E2[ワーカー2<br/>実装]
-    D --> E3[ワーカー3<br/>実装]
-    
-    E1 --> F1[PR作成]
-    E2 --> F2[PR作成]
-    E3 --> F3[PR作成]
-    
-    F1 --> G[人間が<br/>レビュー]
-    F2 --> G
-    F3 --> G
-    
-    G --> H[リーダーが<br/>マージ]
-    
-    style D fill:#ffe4b5
-    style E1 fill:#ffe4b5
-    style E2 fill:#ffe4b5
-    style E3 fill:#ffe4b5
-```
+![width:900px](img/development-flow.png)
 
-**今回話す内容は並列実装の部分**
+**今回話す内容は並列実装の部分について**
 
 ---
 

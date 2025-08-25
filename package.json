@@ -13,7 +13,9 @@
     "pptx:all": "marp presentations/**/slides.md --pptx",
     "pptx:sample": "marp presentations/sample-presentation/slides.md --pptx",
     "server": "marp presentations/**/slides.md --html --server",
-    "clean": "find presentations -name '*.html' -o -name '*.pdf' -o -name '*.pptx' | xargs rm -f"
+    "clean": "find presentations -name '*.html' -o -name '*.pdf' -o -name '*.pptx' | xargs rm -f",
+    "mermaid": "find presentations -name '*.mmd' -exec sh -c 'mmdc -i \"$1\" -o \"${1%/*}/../img/$(basename \"${1%.mmd}\").png\" -t dark -b transparent' _ {} \\;",
+    "mermaid:ai": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/development-flow.mmd -o presentations/ai-agent-parallel-dev-failures/img/development-flow.png -t dark -b transparent"
   },
   "keywords": [
     "marp",
@@ -28,6 +30,7 @@
     "npm": ">=10.0.0"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^4.2.3"
+    "@marp-team/marp-cli": "^4.2.3",
+    "@mermaid-js/mermaid-cli": "^11.9.0"
   }
 }

@@ -1,0 +1,28 @@
+flowchart LR
+    A[要件定義] --> B[基本設計]
+    B --> C[タスク分割・実行計画]
+    C --> D[実装フェーズ]
+    
+    subgraph parallel [" "]
+        D --> E1[ワーカー1<br/>実装]
+        D --> E2[ワーカー2<br/>実装]
+        D --> E3[ワーカー3<br/>実装]
+        
+        E1 --> F1[PR作成]
+        E2 --> F2[PR作成]
+        E3 --> F3[PR作成]
+        
+        F1 --> G[人間が<br/>レビュー]
+        F2 --> G
+        F3 --> G
+        
+        G --> H[リーダーが<br/>マージ]
+    end
+    
+    H --> I[結合テスト]
+    
+    style parallel fill:none,stroke:#ff4444,stroke-dasharray: 10 10
+    style D fill:#ffe4b5,color:#333
+    style E1 fill:#ffe4b5,color:#333
+    style E2 fill:#ffe4b5,color:#333
+    style E3 fill:#ffe4b5,color:#333
