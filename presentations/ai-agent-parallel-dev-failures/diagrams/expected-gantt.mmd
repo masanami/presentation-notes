@@ -1,0 +1,21 @@
+gantt
+    title 期待していた並列実行
+    dateFormat YYYY-MM-DD
+    axisFormat ` `
+    
+    section ワーカー1
+    タスクA実装      :done, w1task1, 2024-01-01, 2d
+    タスクAレビュー対応  :active, w1task2, 2024-01-04, 2d
+    
+    section ワーカー2
+    タスクB実装      :done, w2task1, 2024-01-01, 3d
+    タスクBレビュー対応  :active, w2task2, 2024-01-05, 2d
+    
+    section ワーカー3
+    タスクC実装      :done, w3task1, 2024-01-02, 3d
+    タスクCレビュー対応  :active, w3task2, 2024-01-06, 2d
+    
+    section 人間レビュー
+    レビューA   :crit, review1, 2024-01-03, 1d
+    レビューB   :crit, review2, 2024-01-04, 1d
+    レビューC   :crit, review3, 2024-01-05, 1d
