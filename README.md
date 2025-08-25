@@ -95,6 +95,7 @@ paginate: true
 ## Marpテーマ
 
 利用可能なテーマ:
+
 - `default` - デフォルトテーマ
 - `gaia` - Gaiaテーマ
 - `uncover` - Uncoverテーマ
