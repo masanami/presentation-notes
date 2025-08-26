@@ -1,0 +1,5 @@
+allowLocalFiles: true
+options:
+  pdf:
+    timeout: 180000
+    printBackground: true
