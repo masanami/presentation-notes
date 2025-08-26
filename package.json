@@ -16,8 +16,8 @@
     "clean": "find presentations -name '*.html' -o -name '*.pdf' -o -name '*.pptx' | xargs rm -f",
     "mermaid": "find presentations -name '*.mmd' -exec sh -c 'mmdc -i \"$1\" -o \"${1%/*}/../img/$(basename \"${1%.mmd}\").png\" -t dark -b transparent' _ {} \\;",
     "mermaid:ai": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/development-flow.mmd -o presentations/ai-agent-parallel-dev-failures/img/development-flow.png -t dark -b transparent -w 2400 -H 1800 -s 3",
-    "mermaid:ai:gantt": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/expected-gantt.mmd -o presentations/ai-agent-parallel-dev-failures/img/expected-gantt.png -t default -b white -w 2400 -H 1800 -s 3",
-    "mermaid:ai:actual": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/actual-gantt.mmd -o presentations/ai-agent-parallel-dev-failures/img/actual-gantt.png -t default -b white -w 2400 -H 1800 -s 3"
+    "mermaid:ai:gantt": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/expected-gantt.mmd -o presentations/ai-agent-parallel-dev-failures/img/expected-gantt.png -t default -b white -w 800 -H 1600",
+    "mermaid:ai:actual": "mmdc -i presentations/ai-agent-parallel-dev-failures/diagrams/actual-gantt.mmd -o presentations/ai-agent-parallel-dev-failures/img/actual-gantt.png -t default -b white -w 800 -H 1600"
   },
   "keywords": [
     "marp",
