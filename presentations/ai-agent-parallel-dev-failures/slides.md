@@ -63,7 +63,7 @@ style: |
 
 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; text-align: center;">
 
-# AIエージェント並列開発の<br>失敗体験と学び
+<h1 style="font-size: 44px;">AIエージェント並列開発の<br>失敗体験と学び</h1>
 
 <br>
 
@@ -97,9 +97,9 @@ style: |
 - **株式会社ZENE** / テックリード（3〜4人の小規模チーム）
 - **ゲノム解析ワークフロー・WEBアプリケーション開発**
   - 遺伝子診断システムの構築
-  - ゲノム情報 = 要配慮個人情報
 
 **AI駆動開発のモチベーション**
+- Claude CodeやCursorなどを利用しているが使いこなせてはいない
 - センシティブな情報を扱うため品質を担保はMust
 - その上でAI駆動開発の恩恵を受けて開発速度を上げたい
 
