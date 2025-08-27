@@ -10,6 +10,7 @@ yarn.lock
 *.html
 *.pdf
 *.pptx
+!presentations/*/shared/*.pdf
 !presentations/*/assets/*.html
 !presentations/*/assets/*.pdf
 
